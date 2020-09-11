@@ -1,0 +1,17 @@
+server:
+  port: 9000
+  compression:
+    enabled: true
+  connection-timeout: 3000
+
+dubbo:
+  application:
+    name: boot
+  registry:
+    protocol: zookeeper
+    address: 192.168.198.100
+  protocol:
+    name: dubbo
+    port: 20880
+  moniter:
+    protocol: registry
